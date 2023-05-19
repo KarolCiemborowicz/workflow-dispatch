@@ -42,6 +42,7 @@ jobs:
     - name: Invoke echo 1 workflow using this action (do not wait for completion)
       uses: ./
       with:
+        ref: refs/heads/main
         workflow: Message Echo 1
         token: ${{ secrets.PERSONAL_TOKEN }}
         inputs: '{"message": "blah blah"}'
